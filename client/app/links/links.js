@@ -10,7 +10,7 @@ angular.module('shortly.links', [])
     Links.getLinks()
     .then(function(data){
       for (var key in data) {
-        data[key].visits = 0;
+        console.log(data);
         $scope.data.links.push(data[key])
       }
     })

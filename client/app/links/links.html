@@ -10,8 +10,8 @@
 
   <div class='links'>
   <ul>
-    <li class='link' ng-repeat='link in data.links' ng-click="data.link.visits ++">
-    <a href='{{"/api/links/" + link.code}}'>{{link.url + "/" + link.code}}</a>
+    <li class='link' ng-repeat='link in data.links'>
+    <a href='{{"/api/links/" + link.code}}' ng-click="console.log(link)">{{link.url + "/" + link.code}}</a>
     <div class='visits'><span class='count'>{{link.visits}}</span>Visits</div>
     </li>
   </ul>
